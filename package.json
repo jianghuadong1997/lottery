@@ -1,0 +1,54 @@
+{
+  "name": "lottery-tracking-system",
+  "version": "0.1.0",
+  "private": true,
+
+  "homepage": "./",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "pake-cli": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.1",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pake-dev": "npm run dev & npx pake http://localhost:5173 --name \"彩票追号管理系统\" --width 1200 --height 800",
+    "pake-build": "npm run build && npx pake ./dist --name \"彩票追号管理系统\" --width 1200 --height 800",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.1",
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5",
+        "wait-on": "^8.0.3"
+  }
+}
